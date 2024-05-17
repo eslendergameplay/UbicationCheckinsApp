@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple">#5E03FF</color>
+    <color name="entr">#FBE201</color>
+    <color name="Checkin">#FF3D00</color>
+    <color name = "etc">#02ADFA</color>
+</resources>

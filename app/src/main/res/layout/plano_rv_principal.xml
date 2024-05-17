@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/fotorcvprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_venue"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/etinombre"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fotocateg"
+            android:layout_width="69dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#930F05"
+            app:srcCompat="@drawable/etiquetas" />
+
+        <TextView
+            android:id="@+id/eticategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:text="Categoria" />
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/lugares" />
+
+        <TextView
+            android:id="@+id/etilugares"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:text="Estado" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/tips" />
+
+        <TextView
+            android:id="@+id/etitips"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:text="Tips" />
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/like" />
+
+        <TextView
+            android:id="@+id/etilikes"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:text="Likes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/usuario"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/etiusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Usuarios"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@android:drawable/ic_menu_week" />
+
+        <TextView
+            android:id="@+id/etifotos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Photos"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="37dp"
+            app:srcCompat="@drawable/checkins"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/eticheckins"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Checkins"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

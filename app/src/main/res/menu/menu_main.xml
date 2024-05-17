@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.CheckinsApp.Actividades.MainActivity">
+
+
+    <item
+        android:id = "@+id/categoria"
+        android:title="Categoria"
+        android:icon="@drawable/etiquetas"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id = "@+id/favorito"
+        android:title="Fav"
+        android:icon="@drawable/favoritos"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id = "@+id/perfil"
+        android:title="Perfil."
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/cerrarSesion"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

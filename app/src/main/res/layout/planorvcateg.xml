@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="4dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingEnd="4dp">
+
+    <ImageView
+        android:id="@+id/fotorvcategoria"
+        android:layout_width="87dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:background="#870808"
+        android:src="@drawable/etiquetas" />
+
+    <TextView
+        android:id="@+id/etirvcategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Nombre de categoria"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"/>
+</LinearLayout>

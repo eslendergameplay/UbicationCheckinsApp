@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmentos.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/tbperfil"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/purple"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="176dp"
+            android:layout_height="176dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_foreground"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/etiNombreperfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:gravity="center"
+            android:text="Nombre"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+        <GridView
+            android:id="@+id/gridestadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:numColumns="2" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

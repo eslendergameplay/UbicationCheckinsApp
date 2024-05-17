@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmentos.DetalleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/tbdeta"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/purple"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/fotorcvprincipal2"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_venue"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/etinombre2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fotocateg2"
+                android:layout_width="69dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#A51409"
+                android:src="@drawable/etiquetas" />
+
+            <TextView
+                android:id="@+id/eticategoria2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:text="Categoria" />
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/lugares" />
+
+            <TextView
+                android:id="@+id/etilugares2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:text="Estado" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/tips" />
+
+            <TextView
+                android:id="@+id/etitips2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:text="Tips" />
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/like" />
+
+            <TextView
+                android:id="@+id/etilikes2"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:text="Likes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/usuario"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/etiusuario2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Usuarios"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@android:drawable/ic_menu_week" />
+
+            <TextView
+                android:id="@+id/etifotos2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Photos"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="37dp"
+                android:src="@drawable/checkins"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/eticheckins2"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Checkins"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnlike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            app:icon="@drawable/like"
+            android:text="@string/btnlike"
+            app:iconGravity="textStart"
+             />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCkeck_In"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Checkin"
+            android:text="@string/btnCheckin"
+            app:icon="@drawable/checkins"
+            app:iconGravity="textStart"/>
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

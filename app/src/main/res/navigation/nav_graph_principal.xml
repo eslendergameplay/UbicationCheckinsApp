@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_principal"
+    app:startDestination="@id/secondFragment">
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.CheckinsApp.Fragmentos.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_detalleFragmentto"
+            app:destination="@id/detalleFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_categoriasFragment"
+            app:destination="@id/categoriasFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.CheckinsApp.Fragmentos.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" />
+    <fragment
+        android:id="@+id/categoriasFragment"
+        android:name="com.example.CheckinsApp.Fragmentos.CategoriasFragment"
+        android:label="fragment_categorias"
+        tools:layout="@layout/fragment_categorias" >
+        <action
+            android:id="@+id/action_categoriasFragment_to_venuesPorCategoriaFragment"
+            app:destination="@id/venuesPorCategoriaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/venuesPorCategoriaFragment"
+        android:name="com.example.CheckinsApp.Fragmentos.VenuesPorCategoriaFragment"
+        android:label="fragment_venues_por_categoria"
+        tools:layout="@layout/fragment_venues_por_categoria" >
+        <action
+            android:id="@+id/action_venuesPorCategoriaFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.CheckinsApp.Fragmentos.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_favoritosFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.CheckinsApp.Fragmentos.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+</navigation>
